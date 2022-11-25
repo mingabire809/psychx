@@ -13,8 +13,8 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 `;
 
 export const Logocontent = styled.div`

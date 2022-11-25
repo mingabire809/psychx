@@ -4,10 +4,11 @@ import "@fontsource/montserrat";
 export const Wrapper = styled.div`
     width: 100%;
     height: 310px;
-    background-color: #E6E6E6;
+    background-color: #520079;
     border-top: 3px solid #520079;
     overflow: hidden;
     font-family: "Montserrat";
+    color: white;
 `;
 
 export const Content = styled.div`

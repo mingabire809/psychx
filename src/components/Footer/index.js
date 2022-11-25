@@ -11,7 +11,7 @@ const Footer = ()=>{
         <Wrapper>
             <Content>
                 <Container style={{marginLeft: 20}}>
-                    <div style={{width: 100, height: 40, borderRadius: 20, backgroundColor: 'white', textAlign: 'center', paddingTop: 20, marginTop: 10, fontSize: 20, fontWeight: '800', color: '#53296B'}}>
+                    <div style={{width: 100, height: 40, borderRadius: 20, backgroundColor: 'white', textAlign: 'center', paddingTop: 20, marginTop: 10, fontSize: 20, fontWeight: '900', color: '#53296B'}}>
                     P<span style={{fontSize: 13}}>sych</span>X
                     </div>
                     <h4>https://www.psychx.io</h4>
@@ -21,11 +21,11 @@ const Footer = ()=>{
                         width: '100%',
                         justifyContent: 'space-between'
                     }}>
-                        <img src={Facebook} alt="social"/>
-                        <img src={Instagram} alt="social"/>
-                        <img src={Twitter} alt="social"/>
-                        <img src={LinkedIn} alt="social"/>
-                        <img src={Youtube} alt="social"/>
+                        <img src={Facebook} alt="social" style={{width: 40, height: 40}}/>
+                        <img src={Instagram} alt="social" style={{width: 40, height: 40}}/>
+                        <img src={Twitter} alt="social" style={{width: 40, height: 40}}/>
+                        <img src={LinkedIn} alt="social" style={{width: 40, height: 40}}/>
+                        <img src={Youtube} alt="social" style={{width: 50, height: 40}}/>
                     </div>
                 </Container>
 
@@ -42,7 +42,7 @@ const Footer = ()=>{
                     <h5>Nairobi, Kenya</h5>
                 </Container>
                 <Container style={{marginRight: 20}}>
-                    <h3 style={{color: '#1E012E'}}>Talk to Us</h3>
+                    <h3 style={{color: 'white'}}>Talk to Us</h3>
                     <Talk placeholder="Type Message ..."/>
                     <Submit>Submit</Submit>
                 </Container>

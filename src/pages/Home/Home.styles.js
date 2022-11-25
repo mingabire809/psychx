@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import CounsellingSession from '../../assets/images/counselling_session.png'
+
 import "@fontsource/montserrat";
 import bubble1 from '../../assets/images/bubble1.png'
 import bubble2 from '../../assets/images/bubble2.png'
+
+import Hand from '../../assets/images/hands.png'
 
 export const Wrapper = styled.div`
     overflow: hidden;
     font-family: "Montserrat";
     background-color: #FBF5FF;
-`;
+    min-height: 4500px;
 
-export const Content = styled.div`
-    padding: 50px;
     .focus{
         animation: focus 2s;
 
@@ -28,6 +28,10 @@ export const Content = styled.div`
     .focusparagraph{
         width: 100%;
         animation: focusparagraph 2s;
+        height: 200px;
+        padding-top: 30px;
+        background: #F1D9FF;
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 
 @keyframes focusparagraph{
          from{
@@ -39,9 +43,23 @@ export const Content = styled.div`
      }
     }
 `;
+
+export const Content = styled.div`
+    padding: 50px;
+    overflow: hidden;
+   
+`;
 export const Welcome = styled.div`
     display: flex;
     width: 100%;
+   
+    padding: 60px;
+    background: linear-gradient(100.97deg, #FFBFB6 4.61%, rgba(248,204,255,0) 100%);
+    border-top-left-radius: 13pc;
+    border-bottom-left-radius: 13pc;
+    border-top-right-radius: 13pc;
+    border-bottom-right-radius: 13pc;
+    height: 67vh;
 `;
 
 export const WordWelcome = styled.div`
@@ -49,13 +67,14 @@ export const WordWelcome = styled.div`
 
    h1{
     color: #250039;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: bold;
    }
 
    h4{
     font-weight: 400;
     margin-top: 50px;
+    width: 85%;
    }
 
    animation: word 2s;
@@ -87,9 +106,13 @@ animation: image 5s;
 `;
 
 export const Word = styled.span`
+font-family: "sans-serif";
+font-size: larger;
+font-weight: 900;
     ::before{
         content: "Accessible";
-    animation: animate infinite 10s;
+        color: green;
+    animation: animate infinite 14s;
     
     
     }
@@ -97,14 +120,17 @@ export const Word = styled.span`
   
   0% {
       content: "Accessible";
+      color: green;
   }
 
   50% {
       content: "Cost effective";
+      color: blue;
   }
 
   100% {
       content: "Comprehensive";
+      color:violet;
   }
     
 }
@@ -120,18 +146,16 @@ export const SignUp = styled.button`
     font-weight: 700;
     cursor: pointer;
     border-radius: 20px;
-    margin-top: 20%;
+    margin-top: 0%;
     font-family: "Montserrat";
 `;
 
 export const ImageBackground = styled.div`
-width: 100%;
-height: 300px;
-background-color: #F1D9FF;
-border-bottom-left-radius: 50%;
-border-top-left-radius: 50%;
-margin-top: 20%;
-margin-left: 50px;
+width: 120%;
+height: 70%;
+
+margin-top: 25%;
+margin-left: -30px;
 
 
 `;
@@ -149,7 +173,7 @@ export const Bubble1 = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 15%;
+    margin-left: 18%;
     margin-top: -10%;
     font-size: 13px;
     padding-left: 19px;
@@ -170,7 +194,7 @@ export const Bubble2 = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 25%;
+    margin-left: 28%;
     margin-top: -10%;
     font-size: 13px;
     padding-left: 19px;
@@ -185,22 +209,38 @@ export const Bubble2 = styled.div`
 `;
 
 export const NumberContent = styled.div`
-    width: 180px;
-    height: 60px;
+    width: 190px;
+    height: 30px;
     border-radius: 20px;
     background-color: white;
-    margin-top: -23%;
-    margin-left: -8%;
+    margin-top: -13%;
+    margin-left: -4%;
     display: flex;
     align-items: center;
     padding: 10px;
+    z-index: 9999;
+    position: absolute;
+
+    .phone{
+        animation: updown 1s ease infinite;
+        @keyframes updown {
+ 
+
+ 50% {
+   transform: translateY(8%);
+   
+ }
+
+ 
+}
+    }
 `;
 
 export const Video = styled.div`
 background-size: cover;
 width: 100%;
-height: 420px;
-background-image: url(${CounsellingSession});
+height: 500px;
+background-image: url(${Hand});
 margin-top: 100px;
 
 animation: video 2s;
@@ -255,7 +295,7 @@ h3{
 
 export const ServiceContent = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: flex-start;
 flex-wrap: wrap;
 
 `;
@@ -264,8 +304,10 @@ export const Service1 = styled.div`
     border-radius: 20px;
     width: 280px;
     height: 250px;
-    margin-top: 30px;
+    margin-top: 170px;
+    background-size: cover;
     animation: service 5s;
+    margin-left: 7%;
 @keyframes service{
     0% {
     opacity: 0;
@@ -276,6 +318,15 @@ export const Service1 = styled.div`
    // transform: scale(1, 1);
   }
         }
+`;
+
+export const StoryCircle = styled.div`
+    width: 550px;
+    height: 550px;
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 50%;
+    float: left;
 `;
 
 export const Story = styled.div`
@@ -331,9 +382,20 @@ animation: button 4s;
 
 `;
 
+export const WhyTitle = styled.div`
+    border: 1px solid #FFB800;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    padding-top: 180px;
+    margin-top: -200px;
+    margin-bottom: 20px;
+    
+`;
+
 export const Whybutton = styled.div`
     background-color: #F9EEFF;
-    box-shadow: 4px 4px 4px rgba(105, 0, 155, 0.4);
+    box-shadow: 4px 4px 4px #AD00FF;
     border-radius: 20px;
     width: 180px;
     height: 45px;
@@ -365,7 +427,7 @@ margin-bottom: 150px;
 `;
 
 export const Cofounder = styled.div`
-    background-color: #E6E6E6;
+    background-color: #FFF5DB;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
     border-radius: 20px;
     width: 330px;
@@ -389,7 +451,7 @@ export const Cofounder = styled.div`
 export const White = styled.div`
 width: 210px;
 height: 210px;
-background-color: white;
+background-size: cover;
 border-radius: 100%;
 margin-left: auto;
 margin-right: auto;
