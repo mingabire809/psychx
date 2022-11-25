@@ -157,8 +157,8 @@ export const Bubble1 = styled.div`
     animation: fade 5s infinite;
 
     @keyframes fade {
-  0%,100% { opacity: 0 }
-  50% { opacity: 1 }
+  0%,100% { opacity: 1 }
+  50% { opacity: 0 }
 }
 
 `;
