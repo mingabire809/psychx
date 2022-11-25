@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import CounsellingSession from '../../assets/images/counselling_session.png'
 import "@fontsource/montserrat";
+import bubble1 from '../../assets/images/bubble1.png'
+import bubble2 from '../../assets/images/bubble2.png'
 
 export const Wrapper = styled.div`
     overflow: hidden;
@@ -136,8 +138,50 @@ margin-left: 50px;
 
 export const Counseling = styled.img`
     width: 400px;
+    margin-left: 20%;
+    margin-top: -50px;
+`;
+
+export const Bubble1 = styled.div`
+    background-image: url(${bubble1});
+    width: 120px;
+    height: 63px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -10%;
+    font-size: 13px;
+    padding-left: 19px;
+    padding-top: 30px;
+    animation: fade 5s infinite;
+
+    @keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+`;
+
+export const Bubble2 = styled.div`
+ background-image: url(${bubble2});
+ width: 120px;
+    height: 65px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
     margin-left: 25%;
-    margin-top: -90px;
+    margin-top: -10%;
+    font-size: 13px;
+    padding-left: 19px;
+    padding-top: 30px;
+
+    animation: fade2 5s infinite;
+
+    @keyframes fade2 {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
 `;
 
 export const NumberContent = styled.div`
@@ -146,7 +190,7 @@ export const NumberContent = styled.div`
     border-radius: 20px;
     background-color: white;
     margin-top: -23%;
-    margin-left: -4%;
+    margin-left: -8%;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -192,6 +236,7 @@ h2{
 
 p{
     color: rgba(0,0,0,0.7);
+    text-align: center;
     
 
 }

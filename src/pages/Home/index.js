@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { Advertisement, White,ButtonContent, Cofounder, CofounderContent, Content, Counseling, ImageBackground, ImageContent, NumberContent, Service1, ServiceContent, Services, SignUp, Story, Video, Welcome, Whybutton, Word, WordWelcome, Wrapper, Line } from "./Home.styles";
+import { Advertisement, White,ButtonContent, Cofounder, CofounderContent, Content, Counseling, ImageBackground, ImageContent, NumberContent, Service1, ServiceContent, Services, SignUp, Story, Video, Welcome, Whybutton, Word, WordWelcome, Wrapper, Line, Bubble1, Bubble2 } from "./Home.styles";
 import Counsel from '../../assets/images/counsel1.png'
 import Call from '../../assets/images/call.png'
 import Play from '../../assets/images/play.png'
@@ -52,6 +52,13 @@ const Home = ()=>{
                     </WordWelcome>
                     <ImageContent>
                         <ImageBackground>
+                            <Bubble1>
+                            Lorem ipsum dolor sit amet
+                            </Bubble1>
+
+                            <Bubble2>
+                            Lorem ipsum dolor sit amet
+                            </Bubble2>
                             <Counseling src={Counsel}/>
                         </ImageBackground>
                         <NumberContent>
