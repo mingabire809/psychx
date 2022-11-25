@@ -5,10 +5,37 @@ import "@fontsource/montserrat";
 export const Wrapper = styled.div`
     overflow: hidden;
     font-family: "Montserrat";
+    background-color: #FBF5FF;
 `;
 
 export const Content = styled.div`
     padding: 50px;
+    .focus{
+        animation: focus 2s;
+
+   @keyframes focus{
+            from{
+                margin-left: 50%;
+            }
+            to{
+                margin-left: 0%;
+            }
+        }
+    }
+
+    .focusparagraph{
+        width: 100%;
+        animation: focusparagraph 2s;
+
+@keyframes focusparagraph{
+         from{
+             margin-left: -50%;
+         }
+         to{
+             margin-left: 0%;
+         }
+     }
+    }
 `;
 export const Welcome = styled.div`
     display: flex;
@@ -21,16 +48,40 @@ export const WordWelcome = styled.div`
    h1{
     color: #250039;
     font-size: 45px;
+    font-weight: bold;
    }
 
    h4{
     font-weight: 400;
     margin-top: 50px;
    }
+
+   animation: word 2s;
+
+   @keyframes word{
+            from{
+                margin-top: 50%;
+            }
+            to{
+                margin-top: 0%;
+            }
+        }
 `;
 
 export const ImageContent = styled.div`
 width: 50%;
+animation: image 5s;
+@keyframes image{
+    0% {
+    opacity: 0;
+    //transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+   // transform: scale(1, 1);
+  }
+        }
+
 `;
 
 export const Word = styled.span`
@@ -73,20 +124,20 @@ export const SignUp = styled.button`
 
 export const ImageBackground = styled.div`
 width: 100%;
-height: 250px;
+height: 300px;
 background-color: #F1D9FF;
 border-bottom-left-radius: 50%;
 border-top-left-radius: 50%;
-margin-top: 40%;
+margin-top: 20%;
 margin-left: 50px;
 
 
 `;
 
 export const Counseling = styled.img`
-    width: 300px;
-    margin-left: 35%;
-    margin-top: -70px;
+    width: 400px;
+    margin-left: 25%;
+    margin-top: -90px;
 `;
 
 export const NumberContent = styled.div`
@@ -94,10 +145,11 @@ export const NumberContent = styled.div`
     height: 60px;
     border-radius: 20px;
     background-color: white;
-    margin-top: -20%;
-    margin-left: 5%;
+    margin-top: -23%;
+    margin-left: -4%;
     display: flex;
     align-items: center;
+    padding: 10px;
 `;
 
 export const Video = styled.div`
@@ -107,16 +159,41 @@ height: 420px;
 background-image: url(${CounsellingSession});
 margin-top: 100px;
 
+animation: video 2s;
+@keyframes video{
+    0% {
+   
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    
+    transform: scale(1, 1);
+  }
+        }
+
 `;
 
 export const Services = styled.div`
 h2{
     text-align: center;
     color: #1E012E;
+    animation: word 2s;
+
+   @keyframes word{
+            from{
+                margin-top: 5%;
+            }
+            to{
+                margin-top: 0%;
+            }
+        }
+
 }
 
 p{
     color: rgba(0,0,0,0.7);
+    
+
 }
 
 h3{
@@ -126,6 +203,7 @@ h3{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    
     
 }
 `;
@@ -142,6 +220,17 @@ export const Service1 = styled.div`
     width: 280px;
     height: 250px;
     margin-top: 30px;
+    animation: service 5s;
+@keyframes service{
+    0% {
+    opacity: 0;
+    //transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+   // transform: scale(1, 1);
+  }
+        }
 `;
 
 export const Story = styled.div`
@@ -150,12 +239,51 @@ align-items: center;
 margin-top: 100px;
 justify-content: space-between;
 
+.storypicture{
+    animation: story1 2s;
+
+@keyframes story1{
+         from{
+             margin-left: -25%;
+         }
+         to{
+             margin-left: 0%;
+         }
+     }
+}
+
+.storyword{
+    animation: story2 2s;
+
+@keyframes story2{
+         from{
+             margin-right: -25%;
+         }
+         to{
+             margin-right: 2%;
+         }
+     }
+}
+
 `;
+
+
 
 export const ButtonContent = styled.div`
 display: flex;
 justify-content: space-between;
 width: 100%;
+animation: button 4s;
+
+@keyframes button{
+         from{
+             margin-left: 85%;
+         }
+         to{
+             margin-left: 0%;
+         }
+     }
+
 `;
 
 export const Whybutton = styled.div`
@@ -199,6 +327,18 @@ export const Cofounder = styled.div`
     height: 330px;
     text-align: center;
     color: #1E012E;
+
+    animation: cofounder 2s;
+@keyframes cofounder{
+    0% {
+   
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    
+    transform: scale(1, 1);
+  }
+        }
 `;
 
 export const White = styled.div`

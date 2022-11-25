@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
     height: 80px;
     box-shadow: 4px 6px 4px #DC9EFF;
     font-family: "Montserrat";
+    margin-bottom: 10px;
 `;
 
 export const Content = styled.div`
