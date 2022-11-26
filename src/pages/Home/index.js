@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import { Advertisement, White,ButtonContent, Cofounder, PlayContent, CofounderContent, Content, Counseling, ImageBackground, ImageContent, NumberContent, Service1, ServiceContent, Services, SignUp, Story, Video, Welcome, Whybutton, Word, WordWelcome, Wrapper, Line, Bubble1, Bubble2, WhyTitle, PlayWhite, PlayPicture } from "./Home.styles";
+import { Advertisement, White,ButtonContent, Cofounder, PlayContent, CofounderContent, Content, Counseling, ImageBackground, ImageContent, NumberContent, Service1, ServiceContent, Services, SignUp, Story, Video, Welcome, Whybutton, Word, WordWelcome, Wrapper, Line, Bubble1, Bubble2, WhyTitle, PlayWhite, PlayPicture, VideoBackground } from "./Home.styles";
 import Counsel from '../../assets/images/counsel1.png'
 import Call from '../../assets/images/call.png'
 import Accordion from "../../components/Accordion";
@@ -69,7 +69,7 @@ const Home = ()=>{
                 <Welcome>
                     <WordWelcome>
                         <h1><Word></Word></h1>
-                        <h1 style={{marginTop: -30}}> mental wellness services.</h1>
+                        <h1 className="underword" style={{marginTop: -30}}> mental wellness services.</h1>
                         <h4>Making mental health a way of life by providing accessible,cost effective and comprehensivemental wellness services.</h4>
                         <SignUp>Sign Up Now</SignUp>
                     </WordWelcome>
@@ -83,7 +83,7 @@ const Home = ()=>{
                             Lorem ipsum dolor sit amet
                             </Bubble2>
                             <Counseling src={Counsel}/>
-                            <img src={Under} style={{marginLeft: '23%',marginTop: -15, width: 380}} alt="under"/>
+                            <img src={Under} style={{marginLeft: '23%',marginTop: -85, width: 380}} alt="under"/>
                         </ImageBackground>
                         <NumberContent>
                             <div style={{height: 40, width: 40, backgroundColor: '#FFB800', borderRadius: 60}}>
@@ -98,21 +98,27 @@ const Home = ()=>{
                 </Welcome>
                 
             
-            <div ref={videoRef} style={{marginTop: 150}}>
+            
+            
+
+                <Content>
+
+                <div ref={videoRef} style={{marginTop: 150}}>
                 {video ? <Video>
+                    <VideoBackground>
                     <PlayContent>
                     <PlayWhite>
                         <PlayPicture src={PlayIcon}/>
                     </PlayWhite>
                     </PlayContent>
-                    <h2 style={{backgroundColor: '#C86F3D', width: 180, height: 40, textAlign: 'center',color: 'white', borderTopLeftRadius: 30,borderTopRightRadius: 30, marginLeft: '43%'}}>Our Services</h2>
-                        <p style={{textAlign: 'center',fontWeight: "800", width: 930, backgroundColor: '#C86F3D', borderRadius: 30,color: 'white', height: 60, marginLeft: '10%', marginTop: -23}}>Our solution is a client therapist matchmaking platform where a client gets an opportunity to choose a therapist who suits their preferences and needs. The simple interphase collectsso
+                    <h2 style={{backgroundColor: '#C86F3D', width: 180, height: 40, textAlign: 'center',color: 'white', borderRadius: 30, marginLeft: '43%'}}>Our Services</h2>
+                        <p style={{textAlign: 'center',fontWeight: "800", width: 930, backgroundColor: '#C86F3D', borderRadius: 30,color: 'white', height: 60, marginLeft: '10%'}}>Our solution is a client therapist matchmaking platform where a client gets an opportunity to choose a therapist who suits their preferences and needs. The simple interphase collectsso
 </p>
+                    </VideoBackground>
+                    
                 </Video>: <></>}
             </div>
-            
 
-                <Content>
                     <Services ref={serviceRef}>
                         {service? <>
                             

@@ -8,12 +8,13 @@ import Hand from '../../assets/images/hands.png'
 
 export const Wrapper = styled.div`
     overflow: hidden;
-    font-family: "Montserrat";
+   
     background-color: #FBF5FF;
     min-height: 4500px;
 
     .focus{
         animation: focus 2s;
+        font-family: "Montserrat";
 
    @keyframes focus{
             from{
@@ -32,6 +33,7 @@ export const Wrapper = styled.div`
         padding-top: 30px;
         background: #F1D9FF;
         box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+        font-family: "Montserrat";
 
 @keyframes focusparagraph{
          from{
@@ -47,6 +49,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
     padding: 50px;
     overflow: hidden;
+    font-family: "Montserrat";
    
 `;
 export const Welcome = styled.div`
@@ -70,11 +73,15 @@ export const WordWelcome = styled.div`
     font-size: 55px;
     font-weight: bold;
    }
+   .underword{
+    font-family: "Montserrat";
+   }
 
    h4{
     font-weight: 400;
     margin-top: 50px;
     width: 85%;
+    font-family: "Montserrat";
    }
 
    animation: word 2s;
@@ -92,6 +99,7 @@ export const WordWelcome = styled.div`
 export const ImageContent = styled.div`
 width: 50%;
 animation: image 5s;
+ font-family: "Montserrat";
 @keyframes image{
     0% {
     opacity: 0;
@@ -106,9 +114,9 @@ animation: image 5s;
 `;
 
 export const Word = styled.span`
-font-family: "sans-serif";
+
 font-size: larger;
-font-weight: 900;
+font-weight: bolder;
     ::before{
         content: "Accessible";
         color: green;
@@ -194,7 +202,7 @@ export const Bubble2 = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 28%;
+    margin-left: 26%;
     margin-top: -10%;
     font-size: 13px;
     padding-left: 19px;
@@ -239,10 +247,13 @@ export const NumberContent = styled.div`
 export const Video = styled.div`
 background-size: cover;
 width: 100%;
-height: 400px;
+height: 500px;
 background-image: url(${Hand});
-margin-top: 100px;
-padding-top: 100px;
+margin-top: 0px;
+margin-bottom: 100px;
+border-radius: 20px ;
+overflow: hidden;
+font-family: "Montserrat";
 
 animation: video 2s;
 @keyframes video{
@@ -256,6 +267,13 @@ animation: video 2s;
   }
         }
 
+`;
+
+export const VideoBackground = styled.div`
+width: 100%;
+height: 399px;
+background: rgba(0,0,0,0.6);
+padding-top: 100px;
 `;
 
 export const Services = styled.div`
@@ -298,6 +316,7 @@ export const ServiceContent = styled.div`
 display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
+font-family: "Montserrat";
 
 `;
 export const Service1 = styled.div`
@@ -335,6 +354,7 @@ display: flex;
 align-items: center;
 margin-top: 100px;
 justify-content: space-between;
+font-family: "Montserrat";
 
 .storypicture{
     animation: story1 2s;
@@ -371,6 +391,7 @@ display: flex;
 justify-content: space-between;
 width: 100%;
 animation: button 4s;
+font-family: "Montserrat";
 
 @keyframes button{
          from{
@@ -391,7 +412,7 @@ export const WhyTitle = styled.div`
     padding-top: 180px;
     margin-top: -200px;
     margin-bottom: 20px;
-    
+    font-family: "Montserrat";
 `;
 
 export const Whybutton = styled.div`
@@ -413,6 +434,7 @@ height: 200px;
 background-color: #D9D9D9;
 border-radius: 20px;
 padding-top: 150px;
+font-family: "Montserrat";
 
 h1{
     text-align: center;
@@ -425,6 +447,7 @@ display: flex;
 justify-content: space-between;
 margin-top: 20px;
 margin-bottom: 150px;
+font-family: "Montserrat";
 `;
 
 export const Cofounder = styled.div`
@@ -435,6 +458,7 @@ export const Cofounder = styled.div`
     height: 330px;
     text-align: center;
     color: #1E012E;
+    font-family: "Montserrat";
 
     animation: cofounder 2s;
 @keyframes cofounder{
@@ -467,7 +491,7 @@ height: 2px;
 
 export const PlayContent = styled.div`
     width: 110px;
-    height: 100px;
+    height: 96.5px;
     border-radius: 100%;
     background-color: #C86F3D;
     margin-left: auto;
@@ -506,3 +530,4 @@ opacity: 0;
 
     
 `;
+
