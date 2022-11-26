@@ -239,9 +239,10 @@ export const NumberContent = styled.div`
 export const Video = styled.div`
 background-size: cover;
 width: 100%;
-height: 500px;
+height: 400px;
 background-image: url(${Hand});
 margin-top: 100px;
+padding-top: 100px;
 
 animation: video 2s;
 @keyframes video{
@@ -462,4 +463,46 @@ export const Line = styled.hr`
 background-color: #FFB800;
 width: 100%;
 height: 2px;
+`;
+
+export const PlayContent = styled.div`
+    width: 110px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #C86F3D;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding-top: 9px;
+`;
+
+export const PlayWhite = styled.div`
+width: 65px;
+height: 65px;
+border: 10px solid white;
+border-radius: 100%;
+margin-left: auto;
+margin-right: auto;
+
+`;
+
+export const PlayPicture = styled.img`
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 18px;
+
+    :hover{
+        animation: zoom 1s linear;
+
+    @keyframes zoom {
+  0%,100% { width: 30px; opacity: 1 }
+  50% { width: 65px;
+margin: 0px;
+margin-left: 13px;
+opacity: 0;
+}
+}
+    }
+
+    
 `;

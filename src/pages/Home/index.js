@@ -1,8 +1,7 @@
 import React, {useRef} from "react";
-import { Advertisement, White,ButtonContent, Cofounder, CofounderContent, Content, Counseling, ImageBackground, ImageContent, NumberContent, Service1, ServiceContent, Services, SignUp, Story, Video, Welcome, Whybutton, Word, WordWelcome, Wrapper, Line, Bubble1, Bubble2, WhyTitle } from "./Home.styles";
+import { Advertisement, White,ButtonContent, Cofounder, PlayContent, CofounderContent, Content, Counseling, ImageBackground, ImageContent, NumberContent, Service1, ServiceContent, Services, SignUp, Story, Video, Welcome, Whybutton, Word, WordWelcome, Wrapper, Line, Bubble1, Bubble2, WhyTitle, PlayWhite, PlayPicture } from "./Home.styles";
 import Counsel from '../../assets/images/counsel1.png'
 import Call from '../../assets/images/call.png'
-import Play from '../../assets/images/play.png'
 import Accordion from "../../components/Accordion";
 import StoryPicture from '../../assets/images/story.png'
 import { JoinButton } from "../../components/Header/Header.styles";
@@ -31,6 +30,7 @@ import Cofounder3 from '../../assets/images/cofounder3.png'
 import Moon from '../../assets/images/moon.png'
 import Counsellingservice from '../../assets/images/counsellingservice.png'
 import CorporateWellness from '../../assets/images/corporatewellness.png'
+import PlayIcon from '../../assets/images/play.png'
 
 
 
@@ -100,7 +100,11 @@ const Home = ()=>{
             
             <div ref={videoRef} style={{marginTop: 150}}>
                 {video ? <Video>
-                    <img src={Play} alt="play" style={{marginLeft: '45%', marginTop: 120, cursor: 'pointer'}}/>
+                    <PlayContent>
+                    <PlayWhite>
+                        <PlayPicture src={PlayIcon}/>
+                    </PlayWhite>
+                    </PlayContent>
                     <h2 style={{backgroundColor: '#C86F3D', width: 180, height: 40, textAlign: 'center',color: 'white', borderTopLeftRadius: 30,borderTopRightRadius: 30, marginLeft: '43%'}}>Our Services</h2>
                         <p style={{textAlign: 'center',fontWeight: "800", width: 930, backgroundColor: '#C86F3D', borderRadius: 30,color: 'white', height: 60, marginLeft: '10%', marginTop: -23}}>Our solution is a client therapist matchmaking platform where a client gets an opportunity to choose a therapist who suits their preferences and needs. The simple interphase collectsso
 </p>
